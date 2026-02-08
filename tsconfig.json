@@ -1,0 +1,1 @@
+{\n  "extends": "astro/tsconfigs/strict",\n  "compilerOptions": {\n    "jsx": "react-jsx",\n    "jsxImportSource": "react"\n  }\n}
