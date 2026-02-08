@@ -1,4 +1,4 @@
-# Marizu-Dominic
+# Astro commerce 
 
 A beautiful website built with Astro framework, converting HTML/CSS designs into a modern, performant web application.
 
