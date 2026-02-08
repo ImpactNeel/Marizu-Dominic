@@ -1,0 +1,60 @@
+---
+// Navigation component
+---
+
+<nav class="navbar">
+  <div class="navbar-container">
+    <ul class="nav-menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="/#features">Features</a></li>
+      <li><a href="/about" class="nav-link-placeholder">About</a></li>
+      <li><a href="/contact" class="nav-link-placeholder">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    background: #f8f9fa;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .nav-menu a:hover {
+    color: #667eea;
+  }
+
+  .nav-link-placeholder {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  @media (max-width: 768px) {
+    .nav-menu {
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  }
+</style>
