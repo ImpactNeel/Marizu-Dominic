@@ -1,0 +1,52 @@
+---
+// Header component - Paste your header HTML/CSS here
+---
+
+<header class="header">
+  <div class="header-container">
+    <div class="logo">
+      <h1>Marizu-Dominic</h1>
+    </div>
+    <div class="header-info">
+      <p>Your Design to Code Converter</p>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .header-info p {
+    font-size: 0.9rem;
+    opacity: 0.95;
+  }
+
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .logo h1 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
