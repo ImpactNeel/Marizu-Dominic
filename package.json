@@ -1,1 +1,31 @@
-{"name": "marizu-dominic","description": "A beautiful Astro website built from HTML/CSS designs","version": "0.0.1","type": "module","scripts": {"dev": "astro dev","build": "astro build","preview": "astro preview","astro": "astro","format": "prettier --write \"src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx,json}\"","lint": "eslint src/"},"keywords": ["astro","website","portfolio"],"author": "ImpactNeel","license": "MIT","devDependencies": {"astro": "^4.0.0","prettier": "^3.0.0"},"dependencies": {}}
+{
+  "name": "marizu-dominic",
+  "description": "A beautiful Astro website built from HTML/CSS designs",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write \"src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx,json}\"",
+    "lint": "eslint src/"
+  },
+  "keywords": [
+    "astro",
+    "website",
+    "portfolio"
+  ],
+  "author": "ImpactNeel",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.11",
+    "astro": "^4.0.0",
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "tailwindcss": "^3.4.19"
+  }
+}
