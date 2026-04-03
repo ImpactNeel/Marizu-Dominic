@@ -2,117 +2,188 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Marizu-Dominic | Home" description="Welcome to our beautiful website">
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Marizu-Dominic</h1>
-      <p>Convert your HTML/CSS designs into a powerful Astro website</p>
-      <button class="cta-button">Get Started</button>
+<Layout title="100th Law | Precision in Practice">
+  <!-- 3. Trust Bar -->
+  <section class="bg-surface-container-low py-12 px-16">
+    <div class="max-w-[1200px] mx-auto flex flex-wrap justify-between items-center opacity-40 grayscale">
+      <div class="font-headline italic text-2xl">Fortune 500 Trusted</div>
+      <div class="font-headline italic text-2xl">Top 100 Trial Lawyers</div>
+      <div class="font-headline italic text-2xl">Global Legal Elite</div>
+      <div class="font-headline italic text-2xl">Prestige Partners</div>
     </div>
   </section>
 
-  <section class="features">
-    <h2>Our Features</h2>
-    <div class="features-grid">
-      <div class="feature-card">
-        <h3>⚡ Fast</h3>
-        <p>Lightning-fast performance with Astro's static generation</p>
+  <!-- 4. Practice Areas Grid -->
+  <section class="bg-surface py-24 px-16">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
+        <div>
+          <span class="text-primary tracking-[0.2em] uppercase text-xs font-label mb-4 block">Our Expertise</span>
+          <h2 class="font-headline text-5xl tracking-tight text-on-surface">Practice Areas</h2>
+        </div>
+        <p class="max-w-xs text-on-surface-variant text-sm border-l border-outline-variant/30 pl-6 font-body">Highly specialized divisions focused on the most critical legal challenges of our era.</p>
       </div>
-      <div class="feature-card">
-        <h3>🎨 Beautiful</h3>
-        <p>Stunning designs with responsive CSS</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border-collapse">
+        <!-- Practice Item 1 -->
+        <div class="bg-surface-container-low p-12 border border-outline-variant/10 hover:bg-surface-container-high transition-colors group cursor-pointer">
+          <span class="material-symbols-outlined text-4xl text-primary mb-8">balance</span>
+          <h3 class="font-headline text-2xl mb-4 group-hover:text-primary transition-colors text-on-surface">Corporate Litigation</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-8 font-body">Defending multinationals in class actions and high-exposure commercial disputes.</p>
+          <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity text-on-surface">trending_flat</span>
+        </div>
+        <!-- Practice Item 2 -->
+        <div class="bg-surface-container p-12 border border-outline-variant/10 hover:bg-surface-container-high transition-colors group cursor-pointer">
+          <span class="material-symbols-outlined text-4xl text-primary mb-8">security</span>
+          <h3 class="font-headline text-2xl mb-4 group-hover:text-primary transition-colors text-on-surface">Intellectual Property</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-8 font-body">Strategic protection of trade secrets, patents, and global proprietary assets.</p>
+          <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity text-on-surface">trending_flat</span>
+        </div>
+        <!-- Practice Item 3 -->
+        <div class="bg-surface-container-low p-12 border border-outline-variant/10 hover:bg-surface-container-high transition-colors group cursor-pointer">
+          <span class="material-symbols-outlined text-4xl text-primary mb-8">gavel</span>
+          <h3 class="font-headline text-2xl mb-4 group-hover:text-primary transition-colors text-on-surface">White Collar Defense</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-8 font-body">Discreet and aggressive defense against federal inquiries and regulatory enforcement.</p>
+          <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity text-on-surface">trending_flat</span>
+        </div>
       </div>
-      <div class="feature-card">
-        <h3>🔧 Easy</h3>
-        <p>Simple component-based architecture</p>
+    </div>
+  </section>
+
+  <!-- 5. Featured Attorneys Grid (Bento Style) -->
+  <section class="bg-surface-container-low py-24 px-16">
+    <div class="max-w-[1200px] mx-auto">
+      <h2 class="font-headline text-5xl tracking-tight mb-16 text-center text-on-surface">Senior Partners</h2>
+      <div class="grid grid-cols-12 gap-8">
+        <!-- Main Partner -->
+        <div class="col-span-12 md:col-span-7 relative h-[600px] overflow-hidden group">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale" alt="Senior male attorney in a charcoal suit standing in a modern high-rise office with cold blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbdBLTy_Qdv9EUwRGq9MCb5I5cAj9DcGaaLSrOsNBYwY3js6zD8g2_SYMjfJGs3qWCLAALYWkAql00UTtjJ8a8M14J1df-HDW-O6YruVxPTi0leO9pg4bRAuHjatLExOlKEjF98qEU0E4F8G8mySN99fxxORGm0K6QNdlnhTLeIZXkcrDKQpgTQ9UYX6_LgHrOJn4exoOdqgxsnsNYNsGm5F2LVxjNidI9SIhZC0PINva8hpY3EoJKaZphDrS6YzSs-p45EL75h90"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+          <div class="absolute bottom-10 left-10">
+            <span class="text-xs uppercase tracking-widest text-primary mb-2 block font-label">Managing Partner</span>
+            <h4 class="font-headline text-4xl text-on-surface">Julian V. Sterling</h4>
+          </div>
+        </div>
+        <!-- Partner 2 & 3 -->
+        <div class="col-span-12 md:col-span-5 flex flex-col gap-8">
+          <div class="relative h-[284px] overflow-hidden group">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale" alt="Professional female lawyer in a black blazer looking directly at camera with a serious and confident expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyXoAKSc8YSspt6aDJ2ABxXjroDC-Vr-ERYxuq3mOamE80MWvBR9wjFNL3IuKu6eeDfYBwGU11tBh1KwGzDZkGcKO11tw_UBaKufWlP4-m94h4eVz9AzwqQ-ebvnfqg1XbJYILAgiqiDglILL_pucdZDdGZ3AdiZ4vg0F3NpT6cQCVZM5DNt_cjtR2BsKvPSJXldlIjDjDvVpMeegImlZZToJ8PZTGzHPNUgNokbagwzXV7fiN4BpEecchzwc_Y-KeL-w7Fsr5MsY"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6">
+              <span class="text-xs uppercase tracking-widest text-primary mb-1 block font-label">Head of Litigation</span>
+              <h4 class="font-headline text-2xl text-on-surface">Elena R. Vance</h4>
+            </div>
+          </div>
+          <div class="relative h-[284px] overflow-hidden group">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale" alt="Professional man in glasses and dark suit in a library setting with rows of law books blurred in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrdT0EOCKhJ0jnAtkYlE2HfiRHSh9zbdpaDKnFQcmBlgIN9ST2GOsJJJr_U4YL6X_1bl40q2XB8EdLRC0NGaPXofm37ROEMDxAFbf-WQ6Wicpm09tRivHM6N9ClkI7Rw-mCkFxAQ5j1IiuyxQ8orHzydj5ppKmSRpeoMC-NSVki5mI88pVFZeIVnLdWiv_M9uJ0yvJ5wdXiXSk5EqjdNsxecjL4w6lOFO5p_X3rNrbtL_MVO1eFN32SRVCff3NzhKq_3iMEDgN6lI"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6">
+              <span class="text-xs uppercase tracking-widest text-primary mb-1 block font-label">Senior Counsel</span>
+              <h4 class="font-headline text-2xl text-on-surface">Dr. Marcus Thorne</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. About Teaser (2-col) -->
+  <section class="bg-surface py-32 px-16 overflow-hidden">
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+      <div class="relative">
+        <div class="absolute -top-12 -left-12 w-48 h-48 bg-surface-container-high -z-10"></div>
+        <img class="w-full aspect-square object-cover grayscale" alt="Modern corporate boardroom with a long marble table and leather chairs in a dark moody atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqqQNgkw9vSVwfc4BCDH9hIVvfgraboUJu0vO2oIOX1IBAYFlSW4xkZ6RmBCRCJmV6DKxbbT-JAq0Jf0Sj5492fETyiCnzqbylxALYSGJZHHrTILSejrxK91tFhP-Xm0hSfb0BvJbgJBHjrTJg24QotbGNMPys6ahWBe0y7XPqtcJwaMdErbqoGJxyeGPOtsXvtI5StMfbw5zQ7J3-tM5ce8ffRo8_KjXxR_8TVlBSzzPR6tguXgI0r5fCq3WlZGddIt5TrJu7S-4"/>
+      </div>
+      <div>
+        <h2 class="font-headline text-[4rem] leading-none tracking-tight mb-8 text-on-surface">Built on the 100th Degree of Precision.</h2>
+        <p class="text-on-surface-variant text-lg mb-10 leading-relaxed font-body">At 100th Law, we believe legal outcomes are won in the millimeters. Our firm was founded on the principle that uncompromising attention to detail is the only path to absolute victory.</p>
+        <ul class="space-y-6 mb-12 ml-0">
+          <li class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <span class="text-sm tracking-wide text-on-surface font-body">Elite counsel with pedigree from the world's leading institutions.</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <span class="text-sm tracking-wide text-on-surface font-body">A refusal to settle when a verdict is within reach.</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <span class="text-sm tracking-wide text-on-surface font-body">Global operational capacity with boutique-level exclusivity.</span>
+          </li>
+        </ul>
+        <button class="bg-primary text-on-primary px-8 py-3 text-xs font-bold uppercase tracking-widest transition-all">Our Full Philosophy</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Case Results -->
+  <section class="bg-surface-container-lowest py-24 px-16">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="mb-16 border-b border-outline-variant/10 pb-8">
+        <h2 class="font-headline text-4xl mb-2 text-on-surface">Recent Verdicts</h2>
+        <p class="text-on-surface-variant text-sm font-body">A brief summary of our most impactful institutional recoveries.</p>
+      </div>
+      <div class="space-y-1">
+        <!-- Case 1 -->
+        <div class="grid grid-cols-12 py-8 group hover:bg-surface-container transition-colors px-6">
+          <div class="col-span-12 md:col-span-2 font-label text-primary font-bold text-lg">$140.5M</div>
+          <div class="col-span-12 md:col-span-7">
+            <h4 class="font-headline text-xl mb-2 text-on-surface">Tech Giant v. Sovereign Equity</h4>
+            <p class="text-on-surface-variant text-sm font-body">Multi-jurisdictional intellectual property theft and breach of contract.</p>
+          </div>
+          <div class="col-span-12 md:col-span-3 text-right">
+            <span class="text-xs uppercase tracking-tighter opacity-50 text-on-surface">Verdict - Oct 2023</span>
+          </div>
+        </div>
+        <!-- Case 2 -->
+        <div class="grid grid-cols-12 py-8 group hover:bg-surface-container transition-colors px-6">
+          <div class="col-span-12 md:col-span-2 font-label text-primary font-bold text-lg">$82.0M</div>
+          <div class="col-span-12 md:col-span-7">
+            <h4 class="font-headline text-xl mb-2 text-on-surface">Maritime Logistics Arbitration</h4>
+            <p class="text-on-surface-variant text-sm font-body">International supply chain failure and consequential damages recovery.</p>
+          </div>
+          <div class="col-span-12 md:col-span-3 text-right">
+            <span class="text-xs uppercase tracking-tighter opacity-50 text-on-surface">Arbitration - Jun 2023</span>
+          </div>
+        </div>
+        <!-- Case 3 -->
+        <div class="grid grid-cols-12 py-8 group hover:bg-surface-container transition-colors px-6">
+          <div class="col-span-12 md:col-span-2 font-label text-primary font-bold text-lg">$215.0M</div>
+          <div class="col-span-12 md:col-span-7">
+            <h4 class="font-headline text-xl mb-2 text-on-surface">Pharma IP Infringement</h4>
+            <p class="text-on-surface-variant text-sm font-body">Defense of life-saving patent portfolio against generic encroachment.</p>
+          </div>
+          <div class="col-span-12 md:col-span-3 text-right">
+            <span class="text-xs uppercase tracking-tighter opacity-50 text-on-surface">Settlement - Jan 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Testimonials (Centered Quote) -->
+  <section class="bg-surface py-32 px-16 relative">
+    <div class="max-w-[800px] mx-auto text-center">
+      <span class="material-symbols-outlined text-primary text-6xl mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+      <blockquote class="font-headline text-3xl md:text-4xl italic leading-tight text-on-surface mb-12">
+        "In twenty years of corporate litigation, I have never seen a firm operate with such devastating efficiency and moral clarity as 100th Law."
+      </blockquote>
+      <div class="flex flex-col items-center">
+        <div class="w-12 h-[1px] bg-primary mb-4"></div>
+        <cite class="not-italic font-label uppercase tracking-widest text-sm text-on-surface">Thomas Abernathy</cite>
+        <span class="text-xs text-on-surface-variant mt-1 font-body">General Counsel, Meridian Global</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. CTA Banner -->
+  <section class="bg-surface-container-high py-24 px-16 text-center border-y border-outline-variant/10">
+    <div class="max-w-[1200px] mx-auto">
+      <h2 class="font-headline text-5xl mb-8 text-on-surface">Request a Forensic Review</h2>
+      <p class="text-on-surface-variant max-w-xl mx-auto mb-12 text-lg font-body">Our senior partners review every inquiry personally. We select only the most complex cases where our unique architectural approach can be most effective.</p>
+      <div class="flex flex-col md:flex-row justify-center gap-6">
+        <button class="bg-primary text-on-primary px-12 py-5 font-bold uppercase tracking-widest text-sm hover:brightness-110">Confidential Inquiry</button>
+        <button class="border border-outline px-12 py-5 font-bold uppercase tracking-widest text-sm text-primary bg-transparent hover:bg-surface-container-highest transition-colors">Our Global Offices</button>
       </div>
     </div>
   </section>
 </Layout>
-
-<style>
-  .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 6rem 2rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 60vh;
-  }
-
-  .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-  }
-
-  .hero-content p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    opacity: 0.95;
-  }
-
-  .cta-button {
-    background: white;
-    color: #667eea;
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: transform 0.3s ease;
-  }
-
-  .cta-button:hover {
-    transform: scale(1.05);
-  }
-
-  .features {
-    padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .features h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-  }
-
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-
-  .feature-card {
-    padding: 2rem;
-    border-radius: 8px;
-    background: #f8f9fa;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-
-  .feature-card:hover {
-    transform: translateY(-5px);
-  }
-
-  .feature-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 2rem;
-    }
-
-    .features h2 {
-      font-size: 1.8rem;
-    }
-  }
-</style>

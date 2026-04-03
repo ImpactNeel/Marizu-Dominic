@@ -1,5 +1,7 @@
 import { defineConfig } from 'astro/config';
 
+import tailwind from '@astrojs/tailwind';
+
 export default defineConfig({
   // Enable strict mode
   vite: {
@@ -7,6 +9,6 @@ export default defineConfig({
       external: ['svgo']
     }
   },
-  integrations: [],
+  integrations: [tailwind()],
   output: 'static',
 });

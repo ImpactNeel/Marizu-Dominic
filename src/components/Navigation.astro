@@ -2,59 +2,14 @@
 // Navigation component
 ---
 
-<nav class="navbar">
-  <div class="navbar-container">
-    <ul class="nav-menu">
-      <li><a href="/">Home</a></li>
-      <li><a href="/#features">Features</a></li>
-      <li><a href="/about" class="nav-link-placeholder">About</a></li>
-      <li><a href="/contact" class="nav-link-placeholder">Contact</a></li>
-    </ul>
+<nav class="fixed top-0 w-full z-50 bg-slate-950/70 backdrop-blur-xl flex justify-between items-center px-16 py-6 border-b border-outline-variant/10">
+  <div class="text-2xl font-headline tracking-tighter text-slate-300">100th Law</div>
+  <div class="hidden md:flex space-x-8">
+    <a class="text-slate-50 border-b-2 border-slate-300 pb-1 font-body text-sm tracking-wide" href="#">Practice Areas</a>
+    <a class="text-slate-400 hover:text-slate-50 transition-colors duration-300 font-body text-sm tracking-wide" href="#">About</a>
+    <a class="text-slate-400 hover:text-slate-50 transition-colors duration-300 font-body text-sm tracking-wide" href="#">Cases</a>
+    <a class="text-slate-400 hover:text-slate-50 transition-colors duration-300 font-body text-sm tracking-wide" href="#">Blog</a>
+    <a class="text-slate-400 hover:text-slate-50 transition-colors duration-300 font-body text-sm tracking-wide" href="#">Contact</a>
   </div>
+  <button class="bg-primary text-on-primary px-6 py-2 text-sm font-bold tracking-widest uppercase transition-all active:scale-95">Free Consultation</button>
 </nav>
-
-<style>
-  .navbar {
-    background: #f8f9fa;
-    padding: 1rem 2rem;
-    border-bottom: 1px solid #e0e0e0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-
-  .navbar-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-  }
-
-  .nav-menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-
-  .nav-menu a:hover {
-    color: #667eea;
-  }
-
-  .nav-link-placeholder {
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
-
-  @media (max-width: 768px) {
-    .nav-menu {
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-  }
-</style>

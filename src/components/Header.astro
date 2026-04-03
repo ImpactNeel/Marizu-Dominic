@@ -1,52 +1,27 @@
 ---
-// Header component - Paste your header HTML/CSS here
+// Hero Section
 ---
 
-<header class="header">
-  <div class="header-container">
-    <div class="logo">
-      <h1>Marizu-Dominic</h1>
-    </div>
-    <div class="header-info">
-      <p>Your Design to Code Converter</p>
+<header class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10"></div>
+    <img
+      class="w-full h-full object-cover grayscale opacity-40"
+      alt="Monolithic architectural detail of a supreme court building with deep shadows and sharp stone edges in low key lighting"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgonvXdLr69N6DGOR1YQz-gZ7969kq46NUFbWKa9K4f7iAexKdcrqK8j5bNBs2vI1YKoutKMlUJc7oA1zDpcp-Z1gZj88Kw-3XPUNWpgyL-Y0jJpvuWutApyu8Bu6tHtNuxoYJGCr8ztop9kNNO5Y10ZzJkb1azcJa_YDeC6C5-utK_um6-ZTYysXkmW4r718k1Pm5XTT7GGW2tiL08b65O8zmzJ4grL8f5gLM4KpgZioSGZL3nSwqmenQ8TFcVdeAZw72mGPUhmg"
+    />
+  </div>
+  <div class="relative z-20 max-w-[1200px] mx-auto px-16 w-full grid grid-cols-12">
+    <div class="col-span-12 md:col-span-8">
+      <span class="label-md uppercase tracking-[0.2em] text-primary mb-6 block font-label text-xs">A Legacy of High-Stakes Advocacy</span>
+      <h1 class="font-headline text-[4.5rem] md:text-[6rem] leading-[0.9] tracking-tighter text-on-surface mb-8">The Final Word in <br/>Complex Litigation.</h1>
+      <p class="text-on-surface-variant text-xl max-w-lg mb-12 leading-relaxed font-body">Defending institutional interests with architectural precision and unyielding legal strategy.</p>
+      <div class="flex items-center gap-8">
+        <button class="bg-primary text-on-primary px-10 py-4 font-bold tracking-widest uppercase text-sm hover:brightness-110 transition-all">Secure Counsel</button>
+        <a class="text-primary border-b-2 border-secondary font-bold tracking-widest uppercase text-sm flex items-center gap-2" href="#">
+          View Our Record <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
     </div>
   </div>
 </header>
-
-<style>
-  .header {
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-  }
-
-  .header-info p {
-    font-size: 0.9rem;
-    opacity: 0.95;
-  }
-
-  @media (max-width: 768px) {
-    .header-container {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .logo h1 {
-      font-size: 1.5rem;
-    }
-  }
-</style>

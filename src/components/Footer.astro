@@ -1,114 +1,42 @@
 ---
 // Footer component
-const currentYear = new Date().getFullYear();
 ---
 
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-content">
-      <h3>Marizu-Dominic</h3>
-      <p>Converting your designs into beautiful, fast websites with Astro.</p>
-    </div>
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/#features">Features</a></li>
-      </ul>
-    </div>
-    <div class="footer-social">
-      <h4>Follow Us</h4>
-      <div class="social-links">
-        <a href="#" aria-label="GitHub">GitHub</a>
-        <a href="#" aria-label="Twitter">Twitter</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-      </div>
-    </div>
+<footer class="bg-slate-950 px-16 py-24 w-full grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-slate-800/20">
+  <div class="col-span-1">
+    <div class="font-headline text-xl text-slate-100 mb-6">100th Law</div>
+    <p class="text-slate-500 font-body text-sm leading-relaxed">Providing high-stakes litigation services globally. Precision is not just a standard; it is our foundation.</p>
   </div>
-  <div class="footer-bottom">
-    <p>&copy; {currentYear} Marizu-Dominic. All rights reserved. | Built with <span class="heart">❤️</span> using Astro</p>
+  <div class="col-span-1">
+    <h5 class="text-slate-100 font-bold uppercase text-xs tracking-[0.2em] mb-6 font-body">Navigation</h5>
+    <ul class="space-y-4 font-body text-sm tracking-wide ml-0 list-none">
+      <li><a class="text-slate-500 hover:text-slate-300 transition-colors" href="#">Practice Areas</a></li>
+      <li><a class="text-slate-500 hover:text-slate-300 transition-colors" href="#">Our Results</a></li>
+      <li><a class="text-slate-500 hover:text-slate-300 transition-colors" href="#">Partner Biographies</a></li>
+      <li><a class="text-slate-500 hover:text-slate-300 transition-colors" href="#">Global Operations</a></li>
+    </ul>
+  </div>
+  <div class="col-span-1">
+    <h5 class="text-slate-100 font-bold uppercase text-xs tracking-[0.2em] mb-6 font-body">Legal</h5>
+    <ul class="space-y-4 font-body text-sm tracking-wide ml-0 list-none">
+      <li><a class="text-slate-500 hover:text-slate-300 transition-colors" href="#">Privacy Policy</a></li>
+      <li><a class="text-slate-500 hover:text-slate-300 transition-colors" href="#">Terms of Service</a></li>
+      <li><a class="text-slate-500 hover:text-slate-300 transition-colors" href="#">Disclaimer</a></li>
+      <li><a class="text-slate-500 hover:text-slate-300 transition-colors" href="#">Sitemap</a></li>
+    </ul>
+  </div>
+  <div class="col-span-1">
+    <h5 class="text-slate-100 font-bold uppercase text-xs tracking-[0.2em] mb-6 font-body">Newsletter</h5>
+    <div class="relative">
+      <input
+        class="w-full bg-slate-900 border-b-2 border-slate-700 focus:border-primary px-4 py-3 text-sm text-slate-300 outline-none transition-colors"
+        placeholder="Email Address"
+        type="email"
+      />
+      <button class="absolute right-0 top-1/2 -translate-y-1/2 text-primary p-0 bg-transparent hover:shadow-none hover:translate-y-[-50%]">
+        <span class="material-symbols-outlined">chevron_right</span>
+      </button>
+    </div>
+    <p class="text-[10px] text-slate-600 mt-4 uppercase tracking-tighter">© 2024 100th Law. All rights reserved. Precision in practice.</p>
   </div>
 </footer>
-
-<style>
-  .footer {
-    background: #2d3748;
-    color: #e0e0e0;
-    padding: 3rem 2rem 1rem;
-    margin-top: 4rem;
-  }
-
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .footer h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    color: #fff;
-  }
-
-  .footer h4 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #fff;
-  }
-
-  .footer p {
-    line-height: 1.8;
-  }
-
-  .footer-links ul,
-  .social-links {
-    list-style: none;
-  }
-
-  .footer-links ul li,
-  .social-links a {
-    margin-bottom: 0.5rem;
-  }
-
-  .footer-links a,
-  .social-links a {
-    text-decoration: none;
-    color: #e0e0e0;
-    transition: color 0.3s ease;
-  }
-
-  .footer-links a:hover,
-  .social-links a:hover {
-    color: #667eea;
-  }
-
-  .footer-bottom {
-    border-top: 1px solid #444;
-    padding-top: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-
-  .heart {
-    display: inline-block;
-    animation: heartbeat 1s infinite;
-  }
-
-  @keyframes heartbeat {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-  }
-
-  @media (max-width: 768px) {
-    .footer-container {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
